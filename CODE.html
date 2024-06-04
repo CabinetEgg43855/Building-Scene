@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+    <title>Processing.JS inside Webpages: Template</title> 
+  </head>
+  <body>
+    <canvas id="mycanvas"></canvas> 
+  </body>
+ 
+  <!-- Include the processing.js library -->
+  <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script> 
+  <script>
+  var programCode = function(processingInstance) {
+    with (processingInstance) {
+      size(400, 400); 
+      frameRate(30);
+        
+    {
+        //color palatte
+        var BlueR = 187;
+        var BlueG = 248;
+        var BlueB = 255;
+        var GreenR = 53;
+        var GreenG = 134;
+        var GreenB = 89;
+        var GrayR = 73;
+        var GrayG = 81;
+        var GrayB = 88;
+        
+        //controls
+        
+        var Biulding1X = 177;
+        var Biulding1Y = 165;
+        
+        var Biulding2X = 177;
+        var Biulding2Y = 165;
+        
+        var Biulding3X = 177;
+        var Biulding3Y = 165;
+        
+        var LandX = 187;
+        var LandY = 412;
+        
+        //background
+        background(BlueR, BlueG, BlueB);
+        fill(BlueR-31, BlueG+1, BlueB);
+        noStroke();
+        triangle(0 ,LandY-50, 400, 0, 400, LandY-50);
+        
+        //Biulding sets
+        var bilX = Biulding1X;
+        var bilY = Biulding1Y;
+        
+        fill(GrayR-54,GrayG-54,GrayB-54);
+        quad(bilX-95, bilY-143, bilX-44, bilY-154, bilX-35,bilY+400,bilX-95,bilY+400);
+        fill(GrayR-27, GrayG-27, GrayB-27);
+        quad(bilX-58, bilY-152, bilX-43, bilY-155, bilX-34,bilY+400,bilX-49,bilY+400);
+        stroke((GrayR+160, GrayG+160, GrayB+160));
+        strokeWeight(3);
+        line(bilX-92, bilY-139,bilX-61, bilY-146);
+        noStroke();
+        
+        fill(GrayR+53, GrayG+53, GrayB+53);
+        rect(bilX+20, bilY-123, 62, 400);
+        fill(GrayR+160, GrayG+160, GrayB+160);
+        rect(bilX+23, bilY-120, 10, 30);
+        rect(bilX+38, bilY-120, 10, 30);
+        rect(bilX+53, bilY-120, 10, 30);
+        rect(bilX+68, bilY-120, 10, 30);
+        rect(bilX+23, bilY-86, 10, 30);
+        rect(bilX+38, bilY-86, 10, 30);
+        rect(bilX+53, bilY-86, 10, 30);
+        rect(bilX+68, bilY-86, 10, 30);
+        rect(bilX+23, bilY-52, 10, 30);
+        rect(bilX+38, bilY-52, 10, 30);
+        rect(bilX+53, bilY-52, 10, 30);
+        rect(bilX+68, bilY-52, 10, 30);
+        rect(bilX+23, bilY-18, 10, 30);
+        rect(bilX+38, bilY-18, 10, 30);
+        rect(bilX+53, bilY-18, 10, 30);
+        rect(bilX+68, bilY-18, 10, 30);
+        rect(bilX+23, bilY+16, 10, 30);
+        rect(bilX+38, bilY+16, 10, 30);
+        rect(bilX+53, bilY+16, 10, 30);
+        rect(bilX+68, bilY+16, 10, 30);
+        rect(bilX+23, bilY+50, 10, 30);
+        rect(bilX+38, bilY+50, 10, 30);
+        rect(bilX+53, bilY+50, 10, 30);
+        rect(bilX+68, bilY+50, 10, 30);
+        rect(bilX+23, bilY+84, 10, 30);
+        rect(bilX+38, bilY+84, 10, 30);
+        rect(bilX+53, bilY+84, 10, 30);
+        rect(bilX+68, bilY+84, 10, 30);
+        rect(bilX+23, bilY+118, 10, 30);
+        rect(bilX+38, bilY+118, 10, 30);
+        rect(bilX+53, bilY+118, 10, 30);
+        rect(bilX+68, bilY+118, 10, 30);
+        rect(bilX+23, bilY+152, 10, 30);
+        rect(bilX+38, bilY+152, 10, 30);
+        rect(bilX+53, bilY+152, 10, 30);
+        rect(bilX+68, bilY+152, 10, 30);
+        rect(bilX+23, bilY+186, 10, 30);
+        rect(bilX+38, bilY+186, 10, 30);
+        rect(bilX+53, bilY+186, 10, 30);
+        rect(bilX+68, bilY+186, 10, 30);
+        rect(bilX+23, bilY+220, 10, 30);
+        rect(bilX+38, bilY+220, 10, 30);
+        rect(bilX+53, bilY+220, 10, 30);
+        rect(bilX+68, bilY+220, 10, 30);
+        
+        fill(GrayR, GrayG, GrayB) ;
+        rect(bilX+136, bilY-84, 60, 400);
+        fill(GrayR-27, GrayG-27, GrayB-27);
+        triangle(bilX+196, bilY-84, bilX+196,400,bilX+136,400);
+        
+        var bilX = Biulding2X;
+        var bilY = Biulding2Y;
+        
+        fill(GrayR+70, GrayG+70, GrayB+70);
+        quad(bilX+58, bilY-85, bilX+124, bilY-48, bilX+124,bilY+400,bilX+58,bilY+400);
+        fill(GrayR+107, GrayG+107, GrayB+107);
+        quad(bilX+113, bilY-54, bilX+124, bilY-48, bilX+124,bilY+400,bilX+113,bilY+400);
+        
+        fill(GrayR+53, GrayG+53, GrayB+53);
+        rect(bilX-118, bilY-94, 60, 400);
+        fill(GrayR+160, GrayG+160, GrayB+160);
+        rect(bilX-108, bilY-106, 40, 12);
+        fill(GrayR, GrayG, GrayB);
+        triangle(bilX-118, bilY-94,bilX-118, 400,bilX-59, 400);
+        
+        fill(GrayR, GrayG, GrayB);
+        rect(bilX-51, bilY-26, 90, 400);
+        fill(GrayR+53, GrayG+53, GrayB+53);
+        rect(bilX-51, bilY-26, 20, 400);
+        
+        fill(GrayR, GrayG, GrayB);
+        rect(bilX+84, bilY+52, 65, 400);
+        fill(GrayR+160, GrayG+160, GrayB+160);
+        rect(bilX+87, bilY+55, 59, 20);
+        rect(bilX+87, bilY+78, 59, 20);
+        rect(bilX+87, bilY+101, 59, 20);
+        rect(bilX+87, bilY+124, 59, 20);
+        rect(bilX+87, bilY+147, 59, 20);
+        rect(bilX+87, bilY+170, 59, 20);
+        rect(bilX+87, bilY+193, 59, 20);
+        rect(bilX+87, bilY+216, 59, 20);
+        rect(bilX+87, bilY+239, 59, 20);
+        rect(bilX+87, bilY+262, 59, 20);
+        rect(bilX+87, bilY+285, 59, 20);
+        rect(bilX+87, bilY+308, 59, 20);
+        rect(bilX+87, bilY+331, 59, 20);
+        rect(bilX+87, bilY+354, 59, 20);
+        rect(bilX+87, bilY+377, 59, 20);
+        rect(bilX+87, bilY+400, 59, 20);
+        rect(bilX+87, bilY+423, 59, 20);
+        
+        var bilX = Biulding3X;
+        var bilY = Biulding3Y;
+        
+        fill(GrayR-27, GrayG-27, GrayB-27);
+        quad(bilX-34, bilY+52, bilX+35, bilY+19, bilX+35,bilY+400,bilX-34,bilY+400);
+        fill(GrayR-54,GrayG-54,GrayB-54);
+        quad(bilX-34, bilY+52, bilX-20, bilY+45, bilX-20,bilY+400,bilX-34,bilY+400);
+        
+        fill(GrayR+107, GrayG+107, GrayB+107);
+        rect(bilX-111, bilY+100, 66, 400);
+        fill(GrayR-27, GrayG-27, GrayB-27);
+        rect(bilX-112, bilY+100, 68, 60);
+        fill(GrayR, GrayG, GrayB);
+        rect(bilX-109, bilY+102, 14, 54);
+        rect(bilX-93, bilY+102, 14, 54);
+        rect(bilX-77, bilY+102, 14, 54);
+        rect(bilX-61, bilY+102, 14, 54);
+        
+        fill(GrayR, GrayG, GrayB);
+        rect(bilX+119, bilY+112, 65, 400);
+        fill(GrayR-54,GrayG-54,GrayB-54);
+        triangle(bilX+184, bilY+112, bilX+119, bilY+400, bilX+184, bilY+400);
+        
+        fill(GrayR+53, GrayG+53, GrayB+53);
+        rect(bilX-64, bilY+171, 80, 400);
+        fill(GrayR, GrayG, GrayB);
+        quad(bilX-64, bilY+171, bilX+16, bilY+203, bilX+16, bilY+400,bilX-64, bilY+400);
+        
+        fill(GrayR+107, GrayG+107, GrayB+107);
+        rect(bilX+7, bilY+149, 65, 400);
+        fill(GrayR-27, GrayG-27, GrayB-27);
+        triangle(bilX+72, bilY+149, bilX+72, 400, bilX+7, 400);
+        
+        //ground+tree
+        var scapX = LandX;
+        var scapY = LandY;
+        
+        fill(GreenR+26,GreenG+36,GreenB+5);
+        ellipse(scapX-100, scapY-41, 100,100);
+        fill(GreenR,GreenG, GreenB);
+        rect(0,scapY-50,400,400);
+        
+        fill(163,124,64);
+        rect(scapX-130,scapY-95, 6, 20);
+        rect(scapX-158,scapY-70, 6, 20);
+        rect(scapX+176,scapY-70, 6, 20);
+        rect(scapX+109,scapY-70, 6, 20);
+        rect(scapX+86,scapY-70, 6, 20);
+        rect(scapX+5,scapY-70, 6, 20);
+        rect(scapX-69,scapY-70, 6, 20);
+        rect(scapX-95,scapY-83, 6, 20);
+        rect(scapX-79,scapY-95, 6, 20);
+        
+        fill(GreenR,GreenG, GreenB);
+        ellipse(scapX-127,scapY-95,20,30);
+        ellipse(scapX-155,scapY-70,20,30);
+        ellipse(scapX+112,scapY-70,20,30);
+        ellipse(scapX+8,scapY-70,20,30);
+        ellipse(scapX-66,scapY-70,20,30);
+        ellipse(scapX-92,scapY-83,20,30);
+        
+        fill(GreenR+26,GreenG+36,GreenB+5);
+        ellipse(scapX+179,scapY-70,20,30);
+        ellipse(scapX+89,scapY-70,20,30);
+        ellipse(scapX-76,scapY-95,20,30);
+    }
+    }};
+  var canvas = document.getElementById("mycanvas"); 
+  var processingInstance = new Processing(canvas, programCode); 
+  </script>
+</html>
